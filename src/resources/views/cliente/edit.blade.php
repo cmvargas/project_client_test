@@ -71,8 +71,15 @@ input:focus {
     <br>
     <label for="tipo_documento"> Tipo de documento: </label>
     <select name="tipo_documento" id="tipo_documento">
-        <option value="C.C">Cedula de ciudadania</option>
-        <option value="PASP">Pasaporte</option>    
+        @if($cliente[0]->tipo_documento=="PASP")
+        <option value="PASP" selected>Pasaporte</option> 
+        <option value="C.C" >Cedula de ciudadania</option>  
+        @else
+        <option value="C.C" selected>Cedula de ciudadania</option>
+        <option value="PASP" >Pasaporte</option> 
+        @endif
+        
+         
     </select>
     <br>
     <label for="tipo de documento"> Número de documento: </label>

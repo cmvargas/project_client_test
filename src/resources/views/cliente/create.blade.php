@@ -59,7 +59,7 @@ input:focus {
 }
 </style>
 <div class="font_title_custom"><center>Ingresar nuevo cliente</center></div>
-<div class="font_menu_custom"><center><a href="{{ url('/cliente') }}"> << Regresar a clientes </a></center></div>
+<div class="font_menu_custom"><center><a href="{{ url('/cliente') }}"> << Regresar a pedidos </a></center></div>
 <form action="{{ url('/cliente')}}" method="post" enctype="multipart/form-data">
 @csrf
 

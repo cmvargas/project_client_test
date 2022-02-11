@@ -35,7 +35,7 @@
             <div>{{ $cliente->id }}</div>
             <div>{{ $cliente->nombres }}</div>
             <div>{{ $cliente->apellidos }}</div>
-            <div>{{ $cliente->tipo_docuemnto }}</div>
+            <div>{{ $cliente->tipo_documento }}</div>
             <div>{{ $cliente->numero_documento }}</div>
             <div>
         

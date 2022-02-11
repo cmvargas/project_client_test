@@ -74,7 +74,7 @@ class ClienteController extends Controller
      */
     public function update(Request $request, $cliente_id)
     {
-        Pedido::where('id', $cliente_id)->update(
+        Cliente::where('id', $cliente_id)->update(
             [
                 'nombres' => $request->nombres,
                 'apellidos' => $request->apellidos,
